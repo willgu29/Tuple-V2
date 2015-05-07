@@ -53,6 +53,9 @@
                     <state key="normal" title="Submit Form">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="submit:" destination="-1" eventType="touchUpInside" id="Rv2-lJ-MU3"/>
+                    </connections>
                 </button>
                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="This will be kept private. Just trust us on this one. It'll be worth it." translatesAutoresizingMaskIntoConstraints="NO" id="hc1-K7-b0P">
                     <rect key="frame" x="8" y="391" width="304" height="131"/>

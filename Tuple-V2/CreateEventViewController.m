@@ -29,4 +29,12 @@
     self.title = @"Create Event";
 }
 
+#pragma mark - Hooks
+
+-(IBAction)createEvent:(UIButton *)sender
+{
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
+
 @end

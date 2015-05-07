@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		23B49F4F09DDA2AEEFA3561C /* libPods-Tuple-V2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B3880835A6C3EAFBCDA34D9 /* libPods-Tuple-V2.a */; };
 		84EC59401AFBFD96001FEAD4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EC593F1AFBFD96001FEAD4 /* main.m */; };
 		84EC59431AFBFD96001FEAD4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EC59421AFBFD96001FEAD4 /* AppDelegate.m */; };
 		84EC594B1AFBFD96001FEAD4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84EC594A1AFBFD96001FEAD4 /* Images.xcassets */; };
@@ -15,6 +16,26 @@
 		84EC59671AFBFE9C001FEAD4 /* IntroViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84EC59651AFBFE9C001FEAD4 /* IntroViewController.xib */; };
 		84EC596B1AFC01E7001FEAD4 /* CreateEventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EC59691AFC01E7001FEAD4 /* CreateEventViewController.m */; };
 		84EC596C1AFC01E7001FEAD4 /* CreateEventViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84EC596A1AFC01E7001FEAD4 /* CreateEventViewController.xib */; };
+		84EC59731AFC08AA001FEAD4 /* EventFeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EC59711AFC08AA001FEAD4 /* EventFeedViewController.m */; };
+		84EC59741AFC08AA001FEAD4 /* EventFeedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84EC59721AFC08AA001FEAD4 /* EventFeedViewController.xib */; };
+		84EC59791AFC0E35001FEAD4 /* EventTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EC59771AFC0E35001FEAD4 /* EventTableViewCell.m */; };
+		84EC597A1AFC0E35001FEAD4 /* EventTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84EC59781AFC0E35001FEAD4 /* EventTableViewCell.xib */; };
+		84EC597C1AFC290F001FEAD4 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84EC597B1AFC290F001FEAD4 /* Bolts.framework */; };
+		84EC597E1AFC2917001FEAD4 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84EC597D1AFC2917001FEAD4 /* Parse.framework */; };
+		84EC59821AFC29A1001FEAD4 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84EC59811AFC29A1001FEAD4 /* AudioToolbox.framework */; };
+		84EC59841AFC29AC001FEAD4 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84EC59831AFC29AC001FEAD4 /* CFNetwork.framework */; };
+		84EC59861AFC29B4001FEAD4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84EC59851AFC29B4001FEAD4 /* CoreGraphics.framework */; };
+		84EC59881AFC29BC001FEAD4 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84EC59871AFC29BC001FEAD4 /* CoreLocation.framework */; };
+		84EC598A1AFC29C5001FEAD4 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84EC59891AFC29C5001FEAD4 /* MobileCoreServices.framework */; };
+		84EC598C1AFC29CD001FEAD4 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84EC598B1AFC29CD001FEAD4 /* QuartzCore.framework */; };
+		84EC598E1AFC29D4001FEAD4 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84EC598D1AFC29D4001FEAD4 /* Security.framework */; };
+		84EC59901AFC29DA001FEAD4 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84EC598F1AFC29DA001FEAD4 /* StoreKit.framework */; };
+		84EC59921AFC29E2001FEAD4 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84EC59911AFC29E2001FEAD4 /* SystemConfiguration.framework */; };
+		84EC59941AFC29E9001FEAD4 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 84EC59931AFC29E9001FEAD4 /* libz.dylib */; };
+		84EC59961AFC29F0001FEAD4 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 84EC59951AFC29F0001FEAD4 /* libsqlite3.dylib */; };
+		84EC59981AFC29F9001FEAD4 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84EC59971AFC29F9001FEAD4 /* Accounts.framework */; };
+		84EC599A1AFC29FD001FEAD4 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84EC59991AFC29FD001FEAD4 /* Social.framework */; };
+		F1F5B989E61D25B022D6FD22 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FEDEECF24843165DDBDA645E /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +49,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B3880835A6C3EAFBCDA34D9 /* libPods-Tuple-V2.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tuple-V2.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84EC593A1AFBFD96001FEAD4 /* Tuple-V2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tuple-V2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84EC593E1AFBFD96001FEAD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84EC593F1AFBFD96001FEAD4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -43,6 +65,31 @@
 		84EC59681AFC01E7001FEAD4 /* CreateEventViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateEventViewController.h; sourceTree = "<group>"; };
 		84EC59691AFC01E7001FEAD4 /* CreateEventViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateEventViewController.m; sourceTree = "<group>"; };
 		84EC596A1AFC01E7001FEAD4 /* CreateEventViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CreateEventViewController.xib; sourceTree = "<group>"; };
+		84EC59701AFC08AA001FEAD4 /* EventFeedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventFeedViewController.h; sourceTree = "<group>"; };
+		84EC59711AFC08AA001FEAD4 /* EventFeedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventFeedViewController.m; sourceTree = "<group>"; };
+		84EC59721AFC08AA001FEAD4 /* EventFeedViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventFeedViewController.xib; sourceTree = "<group>"; };
+		84EC59761AFC0E35001FEAD4 /* EventTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventTableViewCell.h; sourceTree = "<group>"; };
+		84EC59771AFC0E35001FEAD4 /* EventTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventTableViewCell.m; sourceTree = "<group>"; };
+		84EC59781AFC0E35001FEAD4 /* EventTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventTableViewCell.xib; sourceTree = "<group>"; };
+		84EC597B1AFC290F001FEAD4 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		84EC597D1AFC2917001FEAD4 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		84EC597F1AFC292C001FEAD4 /* ParseFacebookUtilsV4.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtilsV4.framework; sourceTree = "<group>"; };
+		84EC59811AFC29A1001FEAD4 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		84EC59831AFC29AC001FEAD4 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		84EC59851AFC29B4001FEAD4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		84EC59871AFC29BC001FEAD4 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		84EC59891AFC29C5001FEAD4 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		84EC598B1AFC29CD001FEAD4 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		84EC598D1AFC29D4001FEAD4 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		84EC598F1AFC29DA001FEAD4 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		84EC59911AFC29E2001FEAD4 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		84EC59931AFC29E9001FEAD4 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		84EC59951AFC29F0001FEAD4 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		84EC59971AFC29F9001FEAD4 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		84EC59991AFC29FD001FEAD4 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		D07CC3D32717AC4A2CDE84A2 /* Pods-Tuple-V2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tuple-V2.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tuple-V2/Pods-Tuple-V2.release.xcconfig"; sourceTree = "<group>"; };
+		F38FC173A186958872284195 /* Pods-Tuple-V2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tuple-V2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tuple-V2/Pods-Tuple-V2.debug.xcconfig"; sourceTree = "<group>"; };
+		FEDEECF24843165DDBDA645E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +97,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84EC599A1AFC29FD001FEAD4 /* Social.framework in Frameworks */,
+				84EC59981AFC29F9001FEAD4 /* Accounts.framework in Frameworks */,
+				84EC59961AFC29F0001FEAD4 /* libsqlite3.dylib in Frameworks */,
+				84EC59941AFC29E9001FEAD4 /* libz.dylib in Frameworks */,
+				84EC59921AFC29E2001FEAD4 /* SystemConfiguration.framework in Frameworks */,
+				84EC59901AFC29DA001FEAD4 /* StoreKit.framework in Frameworks */,
+				84EC598E1AFC29D4001FEAD4 /* Security.framework in Frameworks */,
+				84EC598C1AFC29CD001FEAD4 /* QuartzCore.framework in Frameworks */,
+				84EC598A1AFC29C5001FEAD4 /* MobileCoreServices.framework in Frameworks */,
+				84EC59881AFC29BC001FEAD4 /* CoreLocation.framework in Frameworks */,
+				84EC59861AFC29B4001FEAD4 /* CoreGraphics.framework in Frameworks */,
+				84EC59841AFC29AC001FEAD4 /* CFNetwork.framework in Frameworks */,
+				84EC59821AFC29A1001FEAD4 /* AudioToolbox.framework in Frameworks */,
+				84EC597C1AFC290F001FEAD4 /* Bolts.framework in Frameworks */,
+				23B49F4F09DDA2AEEFA3561C /* libPods-Tuple-V2.a in Frameworks */,
+				84EC597E1AFC2917001FEAD4 /* Parse.framework in Frameworks */,
+				F1F5B989E61D25B022D6FD22 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,12 +127,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2BC83DD6703A179617B88E55 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				84EC59991AFC29FD001FEAD4 /* Social.framework */,
+				84EC59971AFC29F9001FEAD4 /* Accounts.framework */,
+				84EC59951AFC29F0001FEAD4 /* libsqlite3.dylib */,
+				84EC59931AFC29E9001FEAD4 /* libz.dylib */,
+				84EC59911AFC29E2001FEAD4 /* SystemConfiguration.framework */,
+				84EC598F1AFC29DA001FEAD4 /* StoreKit.framework */,
+				84EC598D1AFC29D4001FEAD4 /* Security.framework */,
+				84EC598B1AFC29CD001FEAD4 /* QuartzCore.framework */,
+				84EC59891AFC29C5001FEAD4 /* MobileCoreServices.framework */,
+				84EC59871AFC29BC001FEAD4 /* CoreLocation.framework */,
+				84EC59851AFC29B4001FEAD4 /* CoreGraphics.framework */,
+				84EC59831AFC29AC001FEAD4 /* CFNetwork.framework */,
+				84EC59811AFC29A1001FEAD4 /* AudioToolbox.framework */,
+				84EC597F1AFC292C001FEAD4 /* ParseFacebookUtilsV4.framework */,
+				84EC597D1AFC2917001FEAD4 /* Parse.framework */,
+				84EC597B1AFC290F001FEAD4 /* Bolts.framework */,
+				0B3880835A6C3EAFBCDA34D9 /* libPods-Tuple-V2.a */,
+				FEDEECF24843165DDBDA645E /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		84EC59311AFBFD96001FEAD4 = {
 			isa = PBXGroup;
 			children = (
 				84EC593C1AFBFD96001FEAD4 /* Tuple-V2 */,
 				84EC59561AFBFD97001FEAD4 /* Tuple-V2Tests */,
 				84EC593B1AFBFD96001FEAD4 /* Products */,
+				D2C3644BA42C4477010BB943 /* Pods */,
+				2BC83DD6703A179617B88E55 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -84,14 +175,12 @@
 		84EC593C1AFBFD96001FEAD4 /* Tuple-V2 */ = {
 			isa = PBXGroup;
 			children = (
+				84EC599B1AFC2B24001FEAD4 /* CallToActionInterface */,
 				84EC59411AFBFD96001FEAD4 /* AppDelegate.h */,
 				84EC59421AFBFD96001FEAD4 /* AppDelegate.m */,
-				84EC59631AFBFE9C001FEAD4 /* IntroViewController.h */,
-				84EC59641AFBFE9C001FEAD4 /* IntroViewController.m */,
-				84EC59651AFBFE9C001FEAD4 /* IntroViewController.xib */,
-				84EC59681AFC01E7001FEAD4 /* CreateEventViewController.h */,
-				84EC59691AFC01E7001FEAD4 /* CreateEventViewController.m */,
-				84EC596A1AFC01E7001FEAD4 /* CreateEventViewController.xib */,
+				84EC596D1AFC0866001FEAD4 /* IntroInterface */,
+				84EC596E1AFC0877001FEAD4 /* CreateInterface */,
+				84EC596F1AFC088B001FEAD4 /* EventFeedInterface */,
 				84EC594A1AFBFD96001FEAD4 /* Images.xcassets */,
 				84EC593D1AFBFD96001FEAD4 /* Supporting Files */,
 			);
@@ -124,6 +213,63 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		84EC596D1AFC0866001FEAD4 /* IntroInterface */ = {
+			isa = PBXGroup;
+			children = (
+				84EC59631AFBFE9C001FEAD4 /* IntroViewController.h */,
+				84EC59641AFBFE9C001FEAD4 /* IntroViewController.m */,
+				84EC59651AFBFE9C001FEAD4 /* IntroViewController.xib */,
+			);
+			name = IntroInterface;
+			sourceTree = "<group>";
+		};
+		84EC596E1AFC0877001FEAD4 /* CreateInterface */ = {
+			isa = PBXGroup;
+			children = (
+				84EC59681AFC01E7001FEAD4 /* CreateEventViewController.h */,
+				84EC59691AFC01E7001FEAD4 /* CreateEventViewController.m */,
+				84EC596A1AFC01E7001FEAD4 /* CreateEventViewController.xib */,
+			);
+			name = CreateInterface;
+			sourceTree = "<group>";
+		};
+		84EC596F1AFC088B001FEAD4 /* EventFeedInterface */ = {
+			isa = PBXGroup;
+			children = (
+				84EC59751AFC0E19001FEAD4 /* CellInterface */,
+				84EC59701AFC08AA001FEAD4 /* EventFeedViewController.h */,
+				84EC59711AFC08AA001FEAD4 /* EventFeedViewController.m */,
+				84EC59721AFC08AA001FEAD4 /* EventFeedViewController.xib */,
+			);
+			name = EventFeedInterface;
+			sourceTree = "<group>";
+		};
+		84EC59751AFC0E19001FEAD4 /* CellInterface */ = {
+			isa = PBXGroup;
+			children = (
+				84EC59761AFC0E35001FEAD4 /* EventTableViewCell.h */,
+				84EC59771AFC0E35001FEAD4 /* EventTableViewCell.m */,
+				84EC59781AFC0E35001FEAD4 /* EventTableViewCell.xib */,
+			);
+			name = CellInterface;
+			sourceTree = "<group>";
+		};
+		84EC599B1AFC2B24001FEAD4 /* CallToActionInterface */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = CallToActionInterface;
+			sourceTree = "<group>";
+		};
+		D2C3644BA42C4477010BB943 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F38FC173A186958872284195 /* Pods-Tuple-V2.debug.xcconfig */,
+				D07CC3D32717AC4A2CDE84A2 /* Pods-Tuple-V2.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -131,9 +277,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 84EC595D1AFBFD97001FEAD4 /* Build configuration list for PBXNativeTarget "Tuple-V2" */;
 			buildPhases = (
+				707A1773BBD125590937CE03 /* Check Pods Manifest.lock */,
 				84EC59361AFBFD96001FEAD4 /* Sources */,
 				84EC59371AFBFD96001FEAD4 /* Frameworks */,
 				84EC59381AFBFD96001FEAD4 /* Resources */,
+				A4F7B8B03867AAF8D47D587F /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -204,7 +352,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84EC597A1AFC0E35001FEAD4 /* EventTableViewCell.xib in Resources */,
 				84EC594B1AFBFD96001FEAD4 /* Images.xcassets in Resources */,
+				84EC59741AFC08AA001FEAD4 /* EventFeedViewController.xib in Resources */,
 				84EC596C1AFC01E7001FEAD4 /* CreateEventViewController.xib in Resources */,
 				84EC59671AFBFE9C001FEAD4 /* IntroViewController.xib in Resources */,
 			);
@@ -219,12 +369,47 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		707A1773BBD125590937CE03 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A4F7B8B03867AAF8D47D587F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tuple-V2/Pods-Tuple-V2-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		84EC59361AFBFD96001FEAD4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84EC59731AFC08AA001FEAD4 /* EventFeedViewController.m in Sources */,
 				84EC59431AFBFD96001FEAD4 /* AppDelegate.m in Sources */,
+				84EC59791AFC0E35001FEAD4 /* EventTableViewCell.m in Sources */,
 				84EC59661AFBFE9C001FEAD4 /* IntroViewController.m in Sources */,
 				84EC59401AFBFD96001FEAD4 /* main.m in Sources */,
 				84EC596B1AFC01E7001FEAD4 /* CreateEventViewController.m in Sources */,
@@ -328,9 +513,14 @@
 		};
 		84EC595E1AFBFD97001FEAD4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F38FC173A186958872284195 /* Pods-Tuple-V2.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "Tuple-V2/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -340,9 +530,14 @@
 		};
 		84EC595F1AFBFD97001FEAD4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D07CC3D32717AC4A2CDE84A2 /* Pods-Tuple-V2.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "Tuple-V2/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -403,6 +598,7 @@
 				84EC595F1AFBFD97001FEAD4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		84EC59601AFBFD97001FEAD4 /* Build configuration list for PBXNativeTarget "Tuple-V2Tests" */ = {
 			isa = XCConfigurationList;
@@ -411,6 +607,7 @@
 				84EC59621AFBFD97001FEAD4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

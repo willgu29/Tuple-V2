@@ -30,6 +30,9 @@
                     <state key="normal" title="Start your tuple">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="createEvent:" destination="-1" eventType="touchUpInside" id="la7-ed-Ab0"/>
+                    </connections>
                 </button>
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="At what time?" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Iot-bu-4kn">
                     <rect key="frame" x="23" y="261" width="274" height="30"/>

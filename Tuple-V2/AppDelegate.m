@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "IntroViewController.h"
+#import <Parse/Parse.h>
 
 @interface AppDelegate ()
 
@@ -18,10 +19,16 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
+    [self setupParseWithLaunchOptions:launchOptions];
+
+    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     IntroViewController *introVC = [[IntroViewController alloc] initWithNibName:@"IntroViewController" bundle:nil];
-    UINavigationController *navVC = [[UINavigationController alloc] initWithRootViewController:introVC];
-    self.window.rootViewController = navVC;
+    self.window.rootViewController = introVC;
+    
+    
+    
+    
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
@@ -47,6 +54,22 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+#pragma mark - Hooks
+
+-(void)setupParseWithLaunchOptions:(NSDictionary *)launchOptions
+{
+    // https://parse.com/docs/ios_guide#localdatastore/iOS
+    [Parse enableLocalDatastore];
+    
+    // Initialize Parse.
+    [Parse setApplicationId:@"jRr2J6zFk7wSYVNYQGS2FXezhpTR4S7HB20lnW5E"
+                  clientKey:@"kAd4pT9I7s03aUh9JiCmUq7ONGXLr3KZTyvL1i4Q"];
+    
+    // [Optional] Track statistics around application opens.
+    [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
+    
 }
 
 @end
