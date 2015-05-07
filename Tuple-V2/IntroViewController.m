@@ -7,6 +7,9 @@
 //
 
 #import "IntroViewController.h"
+#import "CreateEventViewController.h"
+
+
 
 @interface IntroViewController ()
 
@@ -18,6 +21,10 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
 }
+-(void)viewWillAppear:(BOOL)animated
+{
+    self.navigationController.navigationBarHidden = YES;
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -25,5 +32,15 @@
 }
 
 
+
+
+
+#pragma mark - Hooks
+
+-(IBAction)submit:(UIButton *)sender
+{
+    CreateEventViewController *createVC = [[CreateEventViewController alloc] initWithNibName:@"CreateEventViewController" bundle:nil];
+    [self.navigationController pushViewController:createVC animated:YES];
+}
 
 @end
