@@ -1,0 +1,418 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		84EC59401AFBFD96001FEAD4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EC593F1AFBFD96001FEAD4 /* main.m */; };
+		84EC59431AFBFD96001FEAD4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EC59421AFBFD96001FEAD4 /* AppDelegate.m */; };
+		84EC594B1AFBFD96001FEAD4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84EC594A1AFBFD96001FEAD4 /* Images.xcassets */; };
+		84EC595A1AFBFD97001FEAD4 /* Tuple_V2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EC59591AFBFD97001FEAD4 /* Tuple_V2Tests.m */; };
+		84EC59661AFBFE9C001FEAD4 /* IntroViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EC59641AFBFE9C001FEAD4 /* IntroViewController.m */; };
+		84EC59671AFBFE9C001FEAD4 /* IntroViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84EC59651AFBFE9C001FEAD4 /* IntroViewController.xib */; };
+		84EC596B1AFC01E7001FEAD4 /* CreateEventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EC59691AFC01E7001FEAD4 /* CreateEventViewController.m */; };
+		84EC596C1AFC01E7001FEAD4 /* CreateEventViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84EC596A1AFC01E7001FEAD4 /* CreateEventViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		84EC59541AFBFD97001FEAD4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84EC59321AFBFD96001FEAD4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84EC59391AFBFD96001FEAD4;
+			remoteInfo = "Tuple-V2";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		84EC593A1AFBFD96001FEAD4 /* Tuple-V2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tuple-V2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		84EC593E1AFBFD96001FEAD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84EC593F1AFBFD96001FEAD4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		84EC59411AFBFD96001FEAD4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		84EC59421AFBFD96001FEAD4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		84EC594A1AFBFD96001FEAD4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		84EC59531AFBFD97001FEAD4 /* Tuple-V2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tuple-V2Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		84EC59581AFBFD97001FEAD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84EC59591AFBFD97001FEAD4 /* Tuple_V2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tuple_V2Tests.m; sourceTree = "<group>"; };
+		84EC59631AFBFE9C001FEAD4 /* IntroViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntroViewController.h; sourceTree = "<group>"; };
+		84EC59641AFBFE9C001FEAD4 /* IntroViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntroViewController.m; sourceTree = "<group>"; };
+		84EC59651AFBFE9C001FEAD4 /* IntroViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IntroViewController.xib; sourceTree = "<group>"; };
+		84EC59681AFC01E7001FEAD4 /* CreateEventViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateEventViewController.h; sourceTree = "<group>"; };
+		84EC59691AFC01E7001FEAD4 /* CreateEventViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateEventViewController.m; sourceTree = "<group>"; };
+		84EC596A1AFC01E7001FEAD4 /* CreateEventViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CreateEventViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		84EC59371AFBFD96001FEAD4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84EC59501AFBFD97001FEAD4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		84EC59311AFBFD96001FEAD4 = {
+			isa = PBXGroup;
+			children = (
+				84EC593C1AFBFD96001FEAD4 /* Tuple-V2 */,
+				84EC59561AFBFD97001FEAD4 /* Tuple-V2Tests */,
+				84EC593B1AFBFD96001FEAD4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		84EC593B1AFBFD96001FEAD4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84EC593A1AFBFD96001FEAD4 /* Tuple-V2.app */,
+				84EC59531AFBFD97001FEAD4 /* Tuple-V2Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84EC593C1AFBFD96001FEAD4 /* Tuple-V2 */ = {
+			isa = PBXGroup;
+			children = (
+				84EC59411AFBFD96001FEAD4 /* AppDelegate.h */,
+				84EC59421AFBFD96001FEAD4 /* AppDelegate.m */,
+				84EC59631AFBFE9C001FEAD4 /* IntroViewController.h */,
+				84EC59641AFBFE9C001FEAD4 /* IntroViewController.m */,
+				84EC59651AFBFE9C001FEAD4 /* IntroViewController.xib */,
+				84EC59681AFC01E7001FEAD4 /* CreateEventViewController.h */,
+				84EC59691AFC01E7001FEAD4 /* CreateEventViewController.m */,
+				84EC596A1AFC01E7001FEAD4 /* CreateEventViewController.xib */,
+				84EC594A1AFBFD96001FEAD4 /* Images.xcassets */,
+				84EC593D1AFBFD96001FEAD4 /* Supporting Files */,
+			);
+			path = "Tuple-V2";
+			sourceTree = "<group>";
+		};
+		84EC593D1AFBFD96001FEAD4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				84EC593E1AFBFD96001FEAD4 /* Info.plist */,
+				84EC593F1AFBFD96001FEAD4 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		84EC59561AFBFD97001FEAD4 /* Tuple-V2Tests */ = {
+			isa = PBXGroup;
+			children = (
+				84EC59591AFBFD97001FEAD4 /* Tuple_V2Tests.m */,
+				84EC59571AFBFD97001FEAD4 /* Supporting Files */,
+			);
+			path = "Tuple-V2Tests";
+			sourceTree = "<group>";
+		};
+		84EC59571AFBFD97001FEAD4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				84EC59581AFBFD97001FEAD4 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		84EC59391AFBFD96001FEAD4 /* Tuple-V2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84EC595D1AFBFD97001FEAD4 /* Build configuration list for PBXNativeTarget "Tuple-V2" */;
+			buildPhases = (
+				84EC59361AFBFD96001FEAD4 /* Sources */,
+				84EC59371AFBFD96001FEAD4 /* Frameworks */,
+				84EC59381AFBFD96001FEAD4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Tuple-V2";
+			productName = "Tuple-V2";
+			productReference = 84EC593A1AFBFD96001FEAD4 /* Tuple-V2.app */;
+			productType = "com.apple.product-type.application";
+		};
+		84EC59521AFBFD97001FEAD4 /* Tuple-V2Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84EC59601AFBFD97001FEAD4 /* Build configuration list for PBXNativeTarget "Tuple-V2Tests" */;
+			buildPhases = (
+				84EC594F1AFBFD97001FEAD4 /* Sources */,
+				84EC59501AFBFD97001FEAD4 /* Frameworks */,
+				84EC59511AFBFD97001FEAD4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84EC59551AFBFD97001FEAD4 /* PBXTargetDependency */,
+			);
+			name = "Tuple-V2Tests";
+			productName = "Tuple-V2Tests";
+			productReference = 84EC59531AFBFD97001FEAD4 /* Tuple-V2Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84EC59321AFBFD96001FEAD4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = "William Gu";
+				TargetAttributes = {
+					84EC59391AFBFD96001FEAD4 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					84EC59521AFBFD97001FEAD4 = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = 84EC59391AFBFD96001FEAD4;
+					};
+				};
+			};
+			buildConfigurationList = 84EC59351AFBFD96001FEAD4 /* Build configuration list for PBXProject "Tuple-V2" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 84EC59311AFBFD96001FEAD4;
+			productRefGroup = 84EC593B1AFBFD96001FEAD4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				84EC59391AFBFD96001FEAD4 /* Tuple-V2 */,
+				84EC59521AFBFD97001FEAD4 /* Tuple-V2Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		84EC59381AFBFD96001FEAD4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84EC594B1AFBFD96001FEAD4 /* Images.xcassets in Resources */,
+				84EC596C1AFC01E7001FEAD4 /* CreateEventViewController.xib in Resources */,
+				84EC59671AFBFE9C001FEAD4 /* IntroViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84EC59511AFBFD97001FEAD4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		84EC59361AFBFD96001FEAD4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84EC59431AFBFD96001FEAD4 /* AppDelegate.m in Sources */,
+				84EC59661AFBFE9C001FEAD4 /* IntroViewController.m in Sources */,
+				84EC59401AFBFD96001FEAD4 /* main.m in Sources */,
+				84EC596B1AFC01E7001FEAD4 /* CreateEventViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84EC594F1AFBFD97001FEAD4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84EC595A1AFBFD97001FEAD4 /* Tuple_V2Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		84EC59551AFBFD97001FEAD4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84EC59391AFBFD96001FEAD4 /* Tuple-V2 */;
+			targetProxy = 84EC59541AFBFD97001FEAD4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		84EC595B1AFBFD97001FEAD4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		84EC595C1AFBFD97001FEAD4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		84EC595E1AFBFD97001FEAD4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = "Tuple-V2/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		84EC595F1AFBFD97001FEAD4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = "Tuple-V2/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		84EC59611AFBFD97001FEAD4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Tuple-V2Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tuple-V2.app/Tuple-V2";
+			};
+			name = Debug;
+		};
+		84EC59621AFBFD97001FEAD4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Tuple-V2Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tuple-V2.app/Tuple-V2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84EC59351AFBFD96001FEAD4 /* Build configuration list for PBXProject "Tuple-V2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84EC595B1AFBFD97001FEAD4 /* Debug */,
+				84EC595C1AFBFD97001FEAD4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84EC595D1AFBFD97001FEAD4 /* Build configuration list for PBXNativeTarget "Tuple-V2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84EC595E1AFBFD97001FEAD4 /* Debug */,
+				84EC595F1AFBFD97001FEAD4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		84EC59601AFBFD97001FEAD4 /* Build configuration list for PBXNativeTarget "Tuple-V2Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84EC59611AFBFD97001FEAD4 /* Debug */,
+				84EC59621AFBFD97001FEAD4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 84EC59321AFBFD96001FEAD4 /* Project object */;
+}
