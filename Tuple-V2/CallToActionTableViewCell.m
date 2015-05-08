@@ -6,9 +6,9 @@
 //  Copyright (c) 2015 William Gu. All rights reserved.
 //
 
-#import "EventTableViewCell.h"
+#import "CallToActionTableViewCell.h"
 
-@implementation EventTableViewCell
+@implementation CallToActionTableViewCell
 
 - (void)awakeFromNib {
     // Initialization code

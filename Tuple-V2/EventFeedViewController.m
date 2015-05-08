@@ -8,7 +8,6 @@
 
 #import "EventFeedViewController.h"
 #import "CreateEventViewController.h"
-#import "EventTableViewCell.h"
 
 @interface EventFeedViewController ()
 
@@ -39,45 +38,9 @@
 #pragma mark- UITableView Delegate
 
 
--(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
-    return 1;
-}
-
--(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    NSString *simpleTableIdentifier = [NSString stringWithFormat:@"%ld_%ld", (long)indexPath.section, (long)indexPath.row];
-    EventTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
-    if (cell == nil) {
-        NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"EventTableViewCell" owner:self options:nil];
-        cell = [nib objectAtIndex:0];
-    }
-    
-    return cell;
-}
-
-
--(CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    return 80;
-}
--(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    return 80;
-}
-
-
-#pragma mark - Hooks
-
--(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    
-}
-
 -(void)addEvent
 {
-    CreateEventViewController *createVC = [[CreateEventViewController alloc] initWithNibName:@"CreateEventViewController" bundle:nil];
-    [self.navigationController pushViewController:createVC animated:YES];
+    
 }
 
 @end

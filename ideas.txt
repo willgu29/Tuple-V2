@@ -1,7 +1,9 @@
 Created: May 7th, 2015: 4:40PM
 
+
 Going into this idea remember the following:
 
+KEEP THIS IDEA TO YOURSELF. LET IT DEVELOP
 Have fun with this.
 Pivot and iterate.
 Find a solution to your own problems.
@@ -16,6 +18,9 @@ Starting off, let’s try to pull on human experiences and memories. Filtering t
 Events could refresh every day or every so often. One post per day.
 
 Bringing spontaneity into local areas. Recording audio journaling people can share?
+
+What if you had a group interface where people could join groups and share videos/articles/audio kind of like snapchat's daily news. They would swipe these headlines and click to view more. Right swipe to save, left swipe to delete.
+
 
 
 //RANDOM IDEAS
