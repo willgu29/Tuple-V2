@@ -8,8 +8,11 @@
 
 #import "EventFeedViewController.h"
 #import "CreateEventViewController.h"
+#import "SwipeView.h"
 
 @interface EventFeedViewController ()
+
+@property (nonatomic, weak) IBOutlet UILabel *outOfCards;
 
 @end
 
@@ -28,6 +31,10 @@
     self.navigationItem.rightBarButtonItem = addEvent;
 
 }
+-(void)viewDidAppear:(BOOL)animated
+{
+    [self createSwipeableView];
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -35,12 +42,75 @@
 }
 
 
-#pragma mark- UITableView Delegate
+#pragma mark - MDCSwipeToChooseDelegate Callbacks
 
+// This is called when a user didn't fully swipe left or right.
+- (void)viewDidCancelSwipe:(UIView *)view {
+    NSLog(@"Couldn't decide, huh?");
+}
+
+// Sent before a choice is made. Cancel the choice by returning `NO`. Otherwise return `YES`.
+- (BOOL)view:(UIView *)view shouldBeChosenWithDirection:(MDCSwipeDirection)direction {
+    if (direction == MDCSwipeDirectionLeft) {
+        return YES;
+    } else if (direction == MDCSwipeDirectionRight ) {
+        return YES;
+    } else {
+    
+        // Snap the view back and cancel the choice.
+        [UIView animateWithDuration:0.16 animations:^{
+            view.transform = CGAffineTransformIdentity;
+            view.center = [view superview].center;
+        }];
+        return NO;
+    }
+}
+
+// This is called then a user swipes the view fully left or right.
+- (void)view:(UIView *)view wasChosenWithDirection:(MDCSwipeDirection)direction {
+    if (direction == MDCSwipeDirectionLeft) {
+        NSLog(@"Photo deleted!");
+    } else if (direction == MDCSwipeDirectionRight) {
+        NSLog(@"Photo saved!");
+    } else {
+        
+    }
+}
+
+#pragma mark - Helpers
+
+-(void)createSwipeableView
+{
+    NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"SwipeView" owner:self options:nil];
+    SwipeView *swipeView  = [nib objectAtIndex:0];
+    
+    
+    
+    MDCSwipeOptions *options = [MDCSwipeOptions new];
+    options.delegate = self;
+    options.onPan = ^(MDCPanState *state){
+        if (state.thresholdRatio == 1.f && state.direction == MDCSwipeDirectionLeft) {
+            //            NSLog(@"Let go now to delete the photo!");
+        }
+        if (state.thresholdRatio == 1.f && state.direction == MDCSwipeDirectionRight) {
+            //            NSLog(@"Let go now to delete the photo!");
+        }
+    };
+    
+    [swipeView setFrame:CGRectMake(18, 90, swipeView.frame.size.width, swipeView.frame.size.height)];
+    [swipeView mdc_swipeToChooseSetup:options];
+    [self.view insertSubview:swipeView aboveSubview:_outOfCards];
+
+}
+
+
+
+#pragma mark- Hooks
 
 -(void)addEvent
 {
     
 }
+
 
 @end

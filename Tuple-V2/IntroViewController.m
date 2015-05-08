@@ -8,7 +8,7 @@
 
 #import "IntroViewController.h"
 #import "EventFeedViewController.h"
-
+#import "CallToActionViewController.h"
 
 @interface IntroViewController ()
 
@@ -39,12 +39,13 @@
 -(IBAction)submit:(UIButton *)sender
 {
     EventFeedViewController *eventVC = [[EventFeedViewController alloc] initWithNibName:@"EventFeedViewController" bundle:nil];
+    CallToActionViewController *callVC = [[CallToActionViewController alloc] initWithNibName:@"CallToActionViewController" bundle:nil];
     
     UITabBarController *tabVC = [[UITabBarController alloc] init];
-    tabVC.viewControllers = @[eventVC];
+    tabVC.viewControllers = @[eventVC, callVC];
 
     
-    [self.navigationController pushViewController:eventVC animated:YES];
+    [self.navigationController pushViewController:tabVC animated:YES];
 }
 
 @end

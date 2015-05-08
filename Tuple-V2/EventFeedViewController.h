@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MDCSwipeToChoose/MDCSwipeToChoose.h>
 
-@interface EventFeedViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+@interface EventFeedViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, MDCSwipeToChooseDelegate>
 
 @end

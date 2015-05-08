@@ -39,6 +39,8 @@
 		84EC59A01AFD3EA6001FEAD4 /* CallToActionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84EC599E1AFD3EA6001FEAD4 /* CallToActionViewController.xib */; };
 		84EC59A51AFD41B0001FEAD4 /* DisplayOverviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EC59A31AFD41B0001FEAD4 /* DisplayOverviewViewController.m */; };
 		84EC59A61AFD41B0001FEAD4 /* DisplayOverviewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84EC59A41AFD41B0001FEAD4 /* DisplayOverviewViewController.xib */; };
+		84EC59AA1AFD7027001FEAD4 /* SwipeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EC59A91AFD7027001FEAD4 /* SwipeView.m */; };
+		84EC59AC1AFD7043001FEAD4 /* SwipeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84EC59AB1AFD7043001FEAD4 /* SwipeView.xib */; };
 		F1F5B989E61D25B022D6FD22 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FEDEECF24843165DDBDA645E /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -77,7 +79,6 @@
 		84EC59781AFC0E35001FEAD4 /* CallToActionTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CallToActionTableViewCell.xib; sourceTree = "<group>"; };
 		84EC597B1AFC290F001FEAD4 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		84EC597D1AFC2917001FEAD4 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
-		84EC597F1AFC292C001FEAD4 /* ParseFacebookUtilsV4.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtilsV4.framework; sourceTree = "<group>"; };
 		84EC59811AFC29A1001FEAD4 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		84EC59831AFC29AC001FEAD4 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		84EC59851AFC29B4001FEAD4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -97,6 +98,9 @@
 		84EC59A21AFD41B0001FEAD4 /* DisplayOverviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DisplayOverviewViewController.h; sourceTree = "<group>"; };
 		84EC59A31AFD41B0001FEAD4 /* DisplayOverviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DisplayOverviewViewController.m; sourceTree = "<group>"; };
 		84EC59A41AFD41B0001FEAD4 /* DisplayOverviewViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DisplayOverviewViewController.xib; sourceTree = "<group>"; };
+		84EC59A81AFD7027001FEAD4 /* SwipeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwipeView.h; sourceTree = "<group>"; };
+		84EC59A91AFD7027001FEAD4 /* SwipeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwipeView.m; sourceTree = "<group>"; };
+		84EC59AB1AFD7043001FEAD4 /* SwipeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SwipeView.xib; sourceTree = "<group>"; };
 		D07CC3D32717AC4A2CDE84A2 /* Pods-Tuple-V2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tuple-V2.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tuple-V2/Pods-Tuple-V2.release.xcconfig"; sourceTree = "<group>"; };
 		F38FC173A186958872284195 /* Pods-Tuple-V2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tuple-V2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tuple-V2/Pods-Tuple-V2.debug.xcconfig"; sourceTree = "<group>"; };
 		FEDEECF24843165DDBDA645E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -153,7 +157,6 @@
 				84EC59851AFC29B4001FEAD4 /* CoreGraphics.framework */,
 				84EC59831AFC29AC001FEAD4 /* CFNetwork.framework */,
 				84EC59811AFC29A1001FEAD4 /* AudioToolbox.framework */,
-				84EC597F1AFC292C001FEAD4 /* ParseFacebookUtilsV4.framework */,
 				84EC597D1AFC2917001FEAD4 /* Parse.framework */,
 				84EC597B1AFC290F001FEAD4 /* Bolts.framework */,
 				0B3880835A6C3EAFBCDA34D9 /* libPods-Tuple-V2.a */,
@@ -246,6 +249,7 @@
 		84EC596F1AFC088B001FEAD4 /* EventFeedInterface */ = {
 			isa = PBXGroup;
 			children = (
+				84EC59A71AFD7003001FEAD4 /* SwipeView */,
 				84EC59701AFC08AA001FEAD4 /* EventFeedViewController.h */,
 				84EC59711AFC08AA001FEAD4 /* EventFeedViewController.m */,
 				84EC59721AFC08AA001FEAD4 /* EventFeedViewController.xib */,
@@ -275,6 +279,16 @@
 				84EC59A41AFD41B0001FEAD4 /* DisplayOverviewViewController.xib */,
 			);
 			name = CallToActionInterface;
+			sourceTree = "<group>";
+		};
+		84EC59A71AFD7003001FEAD4 /* SwipeView */ = {
+			isa = PBXGroup;
+			children = (
+				84EC59A81AFD7027001FEAD4 /* SwipeView.h */,
+				84EC59A91AFD7027001FEAD4 /* SwipeView.m */,
+				84EC59AB1AFD7043001FEAD4 /* SwipeView.xib */,
+			);
+			name = SwipeView;
 			sourceTree = "<group>";
 		};
 		D2C3644BA42C4477010BB943 /* Pods */ = {
@@ -369,6 +383,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				84EC597A1AFC0E35001FEAD4 /* CallToActionTableViewCell.xib in Resources */,
+				84EC59AC1AFD7043001FEAD4 /* SwipeView.xib in Resources */,
 				84EC59A61AFD41B0001FEAD4 /* DisplayOverviewViewController.xib in Resources */,
 				84EC594B1AFBFD96001FEAD4 /* Images.xcassets in Resources */,
 				84EC59741AFC08AA001FEAD4 /* EventFeedViewController.xib in Resources */,
@@ -431,6 +446,7 @@
 				84EC59791AFC0E35001FEAD4 /* CallToActionTableViewCell.m in Sources */,
 				84EC59661AFBFE9C001FEAD4 /* IntroViewController.m in Sources */,
 				84EC59401AFBFD96001FEAD4 /* main.m in Sources */,
+				84EC59AA1AFD7027001FEAD4 /* SwipeView.m in Sources */,
 				84EC59A51AFD41B0001FEAD4 /* DisplayOverviewViewController.m in Sources */,
 				84EC596B1AFC01E7001FEAD4 /* CreateEventViewController.m in Sources */,
 			);
