@@ -11,6 +11,8 @@
 @interface SwipeView : UIView
 
 @property (nonatomic, weak) IBOutlet UILabel *ideaText;
+@property (nonatomic, weak) IBOutlet UILabel *author;
+@property (nonatomic, weak) IBOutlet UILabel *group;
 
 
 @end
