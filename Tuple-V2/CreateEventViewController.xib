@@ -7,6 +7,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CreateEventViewController">
             <connections>
+                <outlet property="textView" destination="2Y6-7I-Gso" id="mUm-J8-3BQ"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -15,25 +16,25 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Write something different..." translatesAutoresizingMaskIntoConstraints="NO" id="2Y6-7I-Gso" customClass="UIPlaceHolderTextView">
-                    <rect key="frame" x="8" y="210" width="304" height="206"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Write something different..." translatesAutoresizingMaskIntoConstraints="NO" id="2Y6-7I-Gso">
+                    <rect key="frame" x="0.0" y="80" width="320" height="201"/>
+                    <color key="backgroundColor" red="0.95520550270000004" green="0.95520550270000004" blue="0.95520550270000004" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                     <connections>
                         <outlet property="delegate" destination="-1" id="KyX-mF-6lq"/>
                     </connections>
                 </textView>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mW4-NI-coG">
-                    <rect key="frame" x="107" y="530" width="106" height="30"/>
-                    <state key="normal" title="Start your tuple">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <connections>
-                        <action selector="createEvent:" destination="-1" eventType="touchUpInside" id="la7-ed-Ab0"/>
-                        <action selector="startTuple:" destination="-1" eventType="touchUpInside" id="GTH-Km-gI5"/>
-                    </connections>
-                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Send To" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ifb-bc-6b6">
+                    <rect key="frame" x="130" y="299" width="61" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0dO-Dr-m0n">
+                    <rect key="frame" x="0.0" y="328" width="320" height="180"/>
+                </pickerView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>

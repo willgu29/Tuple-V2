@@ -10,6 +10,8 @@
 
 @interface CreateEventViewController ()
 
+@property (nonatomic, weak) IBOutlet UITextView *textView;
+
 @end
 
 @implementation CreateEventViewController
@@ -27,19 +29,58 @@
 {
     self.navigationController.navigationBarHidden = NO;
     self.title = @"Create Event";
+    UIBarButtonItem *addTuple = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addTuple)];
+    self.navigationController.navigationItem.rightBarButtonItem = addTuple;
 }
 
--(IBAction)startTuple:(UIButton *)sender
+
+#pragma mark - UITextViewDelegate
+
+
+-(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    [_textView resignFirstResponder];
+}
+- (void)textViewDidBeginEditing:(UITextView *)textView
+{
+    if ([textView.text isEqualToString:@"Write something different..."]) {
+        textView.text = @"";
+        textView.textColor = [UIColor blackColor]; //optional
+    }
+    [textView becomeFirstResponder];
+}
+
+- (void)textViewDidEndEditing:(UITextView *)textView
+{
+    if ([textView.text isEqualToString:@""]) {
+        textView.text = @"Write something different...";
+        textView.textColor = [UIColor lightGrayColor]; //optional
+    }
+    [textView resignFirstResponder];
+}
+
+#pragma mark - UIPickerDelegate
+-(void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component
 {
     
 }
+-(NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component
+{
+    return @"YES";
+}
+-(NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component
+{
+    return 10;
+}
+
 
 #pragma mark - Hooks
 
--(IBAction)createEvent:(UIButton *)sender
+-(void)addTuple
 {
-    [self.navigationController popViewControllerAnimated:YES];
+    //TODO: Save Data
 }
+
 
 
 @end

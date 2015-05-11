@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		23B49F4F09DDA2AEEFA3561C /* libPods-Tuple-V2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B3880835A6C3EAFBCDA34D9 /* libPods-Tuple-V2.a */; };
-		849BCD171B0144FC008A23ED /* UIPlaceHolderTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 849BCD161B0144FC008A23ED /* UIPlaceHolderTextView.m */; };
 		84EC59401AFBFD96001FEAD4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EC593F1AFBFD96001FEAD4 /* main.m */; };
 		84EC59431AFBFD96001FEAD4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EC59421AFBFD96001FEAD4 /* AppDelegate.m */; };
 		84EC594B1AFBFD96001FEAD4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84EC594A1AFBFD96001FEAD4 /* Images.xcassets */; };
@@ -57,8 +56,6 @@
 
 /* Begin PBXFileReference section */
 		0B3880835A6C3EAFBCDA34D9 /* libPods-Tuple-V2.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tuple-V2.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		849BCD151B0144FC008A23ED /* UIPlaceHolderTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIPlaceHolderTextView.h; sourceTree = "<group>"; };
-		849BCD161B0144FC008A23ED /* UIPlaceHolderTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIPlaceHolderTextView.m; sourceTree = "<group>"; };
 		84EC593A1AFBFD96001FEAD4 /* Tuple-V2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tuple-V2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84EC593E1AFBFD96001FEAD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84EC593F1AFBFD96001FEAD4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -168,15 +165,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		849BCCDB1B0143C6008A23ED /* UIPlaceholderTextView */ = {
-			isa = PBXGroup;
-			children = (
-				849BCD151B0144FC008A23ED /* UIPlaceHolderTextView.h */,
-				849BCD161B0144FC008A23ED /* UIPlaceHolderTextView.m */,
-			);
-			name = UIPlaceholderTextView;
-			sourceTree = "<group>";
-		};
 		84EC59311AFBFD96001FEAD4 = {
 			isa = PBXGroup;
 			children = (
@@ -200,7 +188,6 @@
 		84EC593C1AFBFD96001FEAD4 /* Tuple-V2 */ = {
 			isa = PBXGroup;
 			children = (
-				849BCCDB1B0143C6008A23ED /* UIPlaceholderTextView */,
 				84EC59411AFBFD96001FEAD4 /* AppDelegate.h */,
 				84EC59421AFBFD96001FEAD4 /* AppDelegate.m */,
 				84EC596D1AFC0866001FEAD4 /* IntroInterface */,
@@ -460,7 +447,6 @@
 				84EC59661AFBFE9C001FEAD4 /* IntroViewController.m in Sources */,
 				84EC59401AFBFD96001FEAD4 /* main.m in Sources */,
 				84EC59AA1AFD7027001FEAD4 /* SwipeView.m in Sources */,
-				849BCD171B0144FC008A23ED /* UIPlaceHolderTextView.m in Sources */,
 				84EC59A51AFD41B0001FEAD4 /* DisplayOverviewViewController.m in Sources */,
 				84EC596B1AFC01E7001FEAD4 /* CreateEventViewController.m in Sources */,
 			);
