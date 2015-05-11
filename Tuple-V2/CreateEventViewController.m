@@ -29,6 +29,11 @@
     self.title = @"Create Event";
 }
 
+-(IBAction)startTuple:(UIButton *)sender
+{
+    
+}
+
 #pragma mark - Hooks
 
 -(IBAction)createEvent:(UIButton *)sender

@@ -14,6 +14,8 @@
 
 @property (nonatomic, weak) IBOutlet UILabel *outOfCards;
 
+@property (nonatomic, strong) NSMutableArray *cardData;
+
 @end
 
 @implementation EventFeedViewController
@@ -21,14 +23,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    _cardData = [[NSMutableArray alloc] init];
 }
 
 -(void)viewWillAppear:(BOOL)animated
 {
-    self.navigationController.navigationBarHidden = NO;
+    self.navigationController.navigationBarHidden = YES;
     self.title = @"Event Feed";
-    UIBarButtonItem *addEvent = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addEvent)];
-    self.navigationItem.rightBarButtonItem = addEvent;
+//    UIBarButtonItem *addEvent = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addEvent)];
+//    self.navigationController.navigationItem.rightBarButtonItem = addEvent;
 
 }
 -(void)viewDidAppear:(BOOL)animated
@@ -85,31 +88,49 @@
     SwipeView *swipeView  = [nib objectAtIndex:0];
     
     
-    
     MDCSwipeOptions *options = [MDCSwipeOptions new];
     options.delegate = self;
+    
     options.onPan = ^(MDCPanState *state){
-        if (state.thresholdRatio == 1.f && state.direction == MDCSwipeDirectionLeft) {
-            //            NSLog(@"Let go now to delete the photo!");
+        if (state.thresholdRatio == 1.0f && state.direction == MDCSwipeDirectionLeft) {
+                        NSLog(@"Let go now to delete the photo!");
         }
-        if (state.thresholdRatio == 1.f && state.direction == MDCSwipeDirectionRight) {
-            //            NSLog(@"Let go now to delete the photo!");
+        else if (state.thresholdRatio == 1.0f && state.direction == MDCSwipeDirectionRight) {
+                       NSLog(@"Let go now to delete the photo!");
         }
+        else if (state.direction == MDCSwipeDirectionNone){
+            NSLog(@"DO NOTHING");
+        }
+        
     };
     
     [swipeView setFrame:CGRectMake(18, 90, swipeView.frame.size.width, swipeView.frame.size.height)];
     [swipeView mdc_swipeToChooseSetup:options];
+    
+    [_cardData addObject:swipeView];
+    
     [self.view insertSubview:swipeView aboveSubview:_outOfCards];
 
 }
 
-
+-(IBAction)optIn:(UIButton *)sender
+{
+    //EXAMPLE
+    SwipeView *swipeView = [_cardData objectAtIndex:0];
+    [swipeView mdc_swipe:MDCSwipeDirectionRight];
+}
+-(IBAction)meh:(UIButton *)sender
+{
+    SwipeView *swipeView = [_cardData objectAtIndex:0];
+    [swipeView mdc_swipe:MDCSwipeDirectionLeft];
+}
 
 #pragma mark- Hooks
 
--(void)addEvent
+-(IBAction)addEvent:(UIButton *)sender
 {
-    
+    CreateEventViewController *createVC = [[CreateEventViewController alloc] initWithNibName:@"CreateEventViewController" bundle:nil];
+    [self.navigationController pushViewController:createVC animated:YES];
 }
 
 
