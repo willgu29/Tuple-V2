@@ -32,7 +32,9 @@
 -(NSArray *)getCurrentUserGroups
 {
     PFUser *user = [PFUser currentUser];
-    return user[@"groups"];
+    NSArray *groups = user[@"groups"];
+    
+    return @[@"EVERYONE",@"BAB"];
 }
 
 

@@ -80,6 +80,10 @@
     return [_sendTo count];
 }
 
+-(NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView
+{
+    return 1;
+}
 
 #pragma mark - Hooks
 
