@@ -8,7 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import <MDCSwipeToChoose/MDCSwipeToChoose.h>
+#import "ParseDatabase.h"
 
-@interface EventFeedViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, MDCSwipeToChooseDelegate>
+@interface EventFeedViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, MDCSwipeToChooseDelegate, ParseDelegate>
 
 @end

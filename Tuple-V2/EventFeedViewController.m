@@ -13,7 +13,7 @@
 @interface EventFeedViewController ()
 
 @property (nonatomic, weak) IBOutlet UILabel *outOfCards;
-
+@property (nonatomic, strong) ParseDatabase *parseDatabase;
 @property (nonatomic, strong) NSMutableArray *cardData;
 
 @end
@@ -24,7 +24,9 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     _cardData = [[NSMutableArray alloc] init];
-    
+    _parseDatabase = [[ParseDatabase alloc] init];
+    _parseDatabase.delegate = self;
+    [_parseDatabase getContent];
     
 }
 
@@ -37,7 +39,7 @@
 }
 -(void)viewDidAppear:(BOOL)animated
 {
-    [self createSwipeableView];
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -81,13 +83,26 @@
     }
 }
 
+#pragma mark - Parse Delegate
+-(void)contentFetched:(NSArray *)content
+{
+    int index = [_cardData count];
+    [_cardData addObjectsFromArray:content];
+    for (int i = index; i < [_cardData count]; i++)
+    {
+        [self createSwipeableView:[_cardData objectAtIndex:i]];
+    }
+}
+
 #pragma mark - Helpers
 
--(void)createSwipeableView
+-(void)createSwipeableView:(PFObject *)contentData
 {
     NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"SwipeView" owner:self options:nil];
     SwipeView *swipeView  = [nib objectAtIndex:0];
-    
+    swipeView.contentText.text = contentData[@"contentText"];
+    swipeView.author.text = contentData[@"username"];
+    swipeView.group.text = contentData[@"group"];
     
     MDCSwipeOptions *options = [MDCSwipeOptions new];
     options.delegate = self;
@@ -107,9 +122,7 @@
     
     [swipeView setFrame:CGRectMake(18, 90, swipeView.frame.size.width, swipeView.frame.size.height)];
     [swipeView mdc_swipeToChooseSetup:options];
-    
-    [_cardData addObject:swipeView];
-    
+        
     [self.view insertSubview:swipeView aboveSubview:_outOfCards];
 
 }
