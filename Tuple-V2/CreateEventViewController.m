@@ -5,7 +5,7 @@
 //  Created by William Gu on 5/7/15.
 //  Copyright (c) 2015 William Gu. All rights reserved.
 //
-
+#import "ParseDatabase.h"
 #import "CreateEventViewController.h"
 
 @interface CreateEventViewController ()
@@ -13,6 +13,7 @@
 @property (nonatomic, weak) IBOutlet UITextView *textView;
 
 @property (nonatomic, strong) NSArray *sendTo;
+@property (nonatomic) NSInteger selectedGroup;
 
 @end
 
@@ -21,7 +22,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    //TODO: Fetch from Cloud what groups peep is in
+    _sendTo = [[ParseDatabase shared] getCurrentUserGroups];
     
     
 }
@@ -68,15 +69,15 @@
 #pragma mark - UIPickerDelegate
 -(void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component
 {
-    
+    _selectedGroup = row;
 }
 -(NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component
 {
-    return @"YES";
+    return [_sendTo objectAtIndex:row];
 }
 -(NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component
 {
-    return 10;
+    return [_sendTo count];
 }
 
 

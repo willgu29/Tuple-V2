@@ -19,5 +19,7 @@
 
 @property (nonatomic, assign) id delegate;
 -(void)getContent;
+-(NSArray *)getCurrentUserGroups;
++(instancetype)shared;
 
 @end

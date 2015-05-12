@@ -29,4 +29,22 @@
     }];
 }
 
+-(NSArray *)getCurrentUserGroups
+{
+    PFUser *user = [PFUser currentUser];
+    return user[@"groups"];
+}
+
+
++ (instancetype)shared
+{
+    static ParseDatabase *_instance = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        _instance = [[ParseDatabase alloc] init];
+    });
+    return _instance;
+}
+
+
 @end

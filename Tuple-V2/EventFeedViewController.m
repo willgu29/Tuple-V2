@@ -13,7 +13,6 @@
 @interface EventFeedViewController ()
 
 @property (nonatomic, weak) IBOutlet UILabel *outOfCards;
-@property (nonatomic, strong) ParseDatabase *parseDatabase;
 @property (nonatomic, strong) NSMutableArray *cardData;
 
 @end
@@ -24,9 +23,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     _cardData = [[NSMutableArray alloc] init];
-    _parseDatabase = [[ParseDatabase alloc] init];
-    _parseDatabase.delegate = self;
-    [_parseDatabase getContent];
+    [[ParseDatabase shared] setDelegate:self];
+    [[ParseDatabase shared] getContent];
     
 }
 
