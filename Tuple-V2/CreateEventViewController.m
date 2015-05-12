@@ -12,6 +12,8 @@
 
 @property (nonatomic, weak) IBOutlet UITextView *textView;
 
+@property (nonatomic, strong) NSArray *sendTo;
+
 @end
 
 @implementation CreateEventViewController
@@ -19,6 +21,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    //TODO: Fetch from Cloud what groups peep is in
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -31,6 +36,7 @@
     self.title = @"Create Event";
     UIBarButtonItem *addTuple = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addTuple)];
     self.navigationController.navigationItem.rightBarButtonItem = addTuple;
+    self.automaticallyAdjustsScrollViewInsets = NO;
 }
 
 

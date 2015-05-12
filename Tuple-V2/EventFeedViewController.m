@@ -24,14 +24,15 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     _cardData = [[NSMutableArray alloc] init];
+    
+    
 }
 
 -(void)viewWillAppear:(BOOL)animated
 {
     self.navigationController.navigationBarHidden = YES;
     self.title = @"Event Feed";
-//    UIBarButtonItem *addEvent = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addEvent)];
-//    self.navigationController.navigationItem.rightBarButtonItem = addEvent;
+
 
 }
 -(void)viewDidAppear:(BOOL)animated
