@@ -76,8 +76,10 @@
 - (void)view:(UIView *)view wasChosenWithDirection:(MDCSwipeDirection)direction {
     if (direction == MDCSwipeDirectionLeft) {
         NSLog(@"Photo deleted!");
+        [_cardData removeObjectAtIndex:0];
     } else if (direction == MDCSwipeDirectionRight) {
         NSLog(@"Photo saved!");
+        [_cardData removeObjectAtIndex:0];
     } else {
         
     }
@@ -86,11 +88,9 @@
 #pragma mark - Parse Delegate
 -(void)contentFetched:(NSArray *)content
 {
-    int index = [_cardData count];
-    [_cardData addObjectsFromArray:content];
-    for (int i = index; i < [_cardData count]; i++)
+    for (int i = 0; i < [content count]; i++)
     {
-        [self createSwipeableView:[_cardData objectAtIndex:i]];
+        [self createSwipeableView:[content objectAtIndex:i]];
     }
 }
 
@@ -122,16 +122,19 @@
     
     [swipeView setFrame:CGRectMake(18, 90, swipeView.frame.size.width, swipeView.frame.size.height)];
     [swipeView mdc_swipeToChooseSetup:options];
-        
+    
+    [_cardData addObject:swipeView];
+    
     [self.view insertSubview:swipeView aboveSubview:_outOfCards];
 
 }
 
 -(IBAction)optIn:(UIButton *)sender
 {
-    //EXAMPLE
+    
     SwipeView *swipeView = [_cardData objectAtIndex:0];
     [swipeView mdc_swipe:MDCSwipeDirectionRight];
+
 }
 -(IBAction)meh:(UIButton *)sender
 {
